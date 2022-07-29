@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-snap-type: y mandatory;
+}
+body{
+    background-color: black;
+}
+.tout{
+    height: 650px;
+    width: 400px;
+    margin-left: 450px;
+    border-radius: 20px;
+    overflow: scroll;
+}
+.video{
+    height: 650px;
+    width: 90%;
+    padding-left: 18.5px;
+    border-radius: 20px;
+    object-fit: cover;
+    scroll-snap-type: y mandatory;
+    scroll-snap-align: start;
+}
+.tout::-webkit-scrollbar{
+    display: none;
+}
+#aime{
+    height: 40px;
+    position: absolute;
+    left: 55%;
+    top:53%;
+}
+#aime1{
+    height: 40px;
+    position: absolute;
+    left: 55%;
+    top:62.5%;
+}
+#aime2{
+    height: 38px;
+    position: absolute;
+    left: 55%;
+    top:73%;
+}
+#aime3{
+    height: 66px;
+    position: absolute;
+    left: 54%;
+    top:83%;
+    animation: rotate infinite;
+}
+@keyframes rotate{
+    from{transform:  rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+#aime3{
+    animation: rotate infinite 5s linear;
+}
